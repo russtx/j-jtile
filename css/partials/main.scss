@@ -1,0 +1,158 @@
+/*================================= Main SCSS ================================================*/
+#finance{
+  background-color: $dark-brown;
+  color:$orange;
+  .leftFinance{
+    text-align: right;
+    padding-right: 0;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    h2{
+      font-size: 45px;
+      margin:0 0 0 0;
+    }
+  }
+  .rightFinance{
+    text-align: left;
+    padding-left: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    h3{
+      padding: 0;
+      margin:0 0 0 0;
+      font-size: 24px;
+
+    }
+    h4{
+      padding: 0;
+      margin:0;
+      font-size: 9px;
+    }
+  }
+}
+#aboutHomeSection{
+  background-color: #fff;
+  padding: 20px;
+  .aboutContent{
+    h2{
+      color: $orange;
+      font-weight: 700;
+    }
+    p{
+      color: $dark-brown;
+    }
+  }
+  .aboutIcons{
+    h2{
+      color: $dark-brown;
+      font-weight: 700;
+    }
+    .icons{
+      display: block;
+      min-height: 200px;
+    }
+    .spriteBox{
+      display: block;
+      width:125px;
+      margin:0 auto;
+      a{
+        text-decoration: none;
+
+      }
+
+      .spriteText{
+        display: block;
+        color: $dark-brown;
+        position: relative;
+        top: 150px;
+        text-align: center;
+        font-size: 18px;
+        &:hover{
+          color: $orange;
+        }
+      }
+    }
+    .sprite-1{
+      background: url(./images/learn-more-sprite-125.png);
+      background-position-y: -130.5px;
+      background-repeat: no-repeat;
+      &:hover{
+        background-position-y: 0;
+      }
+      @extend .sprite;
+
+    }
+    .sprite-2{
+      background: url(./images/tile-sprite.png);
+      background-position-y: -130.5px;
+      background-repeat: no-repeat;
+      &:hover{
+        background-position-y: 0;
+      }
+      @extend .sprite;
+
+    }
+    .sprite-3{
+      background: url(./images/grout-sprite.png);
+      background-position-y: -130.5px;
+      background-repeat: no-repeat;
+      &:hover{
+        background-position-y: 0;
+      }
+      @extend .sprite;
+
+    }
+
+  .sprite-4{
+    background: url(./images/ruler-sprite.png);
+    background-position-y: -130.5px;
+    background-repeat: no-repeat;
+    &:hover{
+      background-position-y: 0;
+    }
+    @extend .sprite;
+
+    }
+  }
+}
+#selections{
+  background: url(./images/selections-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x:-127px;
+}
+.selectionList{
+  padding: 60px 0px;
+  ul{
+    list-style: none;
+    li{
+      a{
+        color: $orange;
+        font-size: 20px;
+      }
+    }
+  }
+  a.btn-main{
+    @extend .button-tan;
+  }
+}
+#brands{
+  background-color: $dark-brown;
+  h2{
+    color: $orange;
+    text-align: center;
+  }
+}
+.grid{
+  padding:20px 
+}
+.grid-item {
+  width: 180px;
+  padding:20px;
+  img{
+    display: block;
+    margin: 10px auto;
+    width: 180px;
+  }
+}

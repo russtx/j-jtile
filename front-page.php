@@ -1,0 +1,141 @@
+<?php get_header(); ?>
+<div id="main-container" >
+	<section id="finance">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="col-xs-5 leftFinance">
+						<h2>0%</h2>
+					</div>
+					<div class="col-xs-7 rightFinance">
+						<h3>FINANCING</h3>
+						<h4>FOR QUALIFIED BUYERS</h4>
+					</div>
+				</div>
+			</div><!-- row -->
+		</div><!-- contaqiner -->
+	</section><!-- finance -->
+	<section id="aboutHomeSection">
+		<div class="aboutContent">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+
+							<?php if( get_field('about_title') ): ?>
+
+								<h2><?php the_field('about_title'); ?></h2>
+
+							<?php endif; ?>
+							<?php if( get_field('about_content') ): ?>
+
+								<p><?php the_field('about_content'); ?></p>
+
+							<?php endif; ?>
+
+						</div>
+					</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- aboutContent -->
+		<div class="aboutIcons">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+							<h2>
+								WE WILL DO OUR BEST TO<BR />
+								ACCOMMODATE YOUR EVERY TILE NEED
+							</h2>
+							<div class="col-xs-6 col-sm-3 icons">
+								<div class="spriteBox">
+									<a href="<?php echo home_url(); ?>"
+										<span class="sprite-1"></span>
+										<span class="spriteText">LEARN MORE</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-3 icons">
+								<div class="spriteBox">
+									<a href="<?php echo home_url(); ?>"
+										<span class="sprite-2"></span>
+										<span class="spriteText">TILES</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-3 icons">
+								<div class="spriteBox">
+									<a href="<?php echo home_url(); ?>"
+										<span class="sprite-3"></span>
+										<span class="spriteText">GROUT</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-3 icons">
+								<div class="spriteBox">
+									<a href="<?php echo home_url(); ?>"
+										<span class="sprite-4"></span>
+										<span class="spriteText">OUR WORK</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- aboutIcons -->
+	</section>
+	<section id="selections">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-4 col-sm-offset-6 selectionList">
+					<ul>
+						<li><a href="<? php home_url(); ?>">CERAMIC</a></li>
+						<li><a href="<? php home_url(); ?>">GLASS</a></li>
+						<li><a href="<? php home_url(); ?>">GRANITE</a></li>
+						<li><a href="<? php home_url(); ?>">METALS</a></li>
+						<li><a href="<? php home_url(); ?>">PORCELAIN</a></li>
+						<li><a href="<? php home_url(); ?>">TRAVERTINE</a></li>
+						<li><a href="<? php home_url(); ?>">TUMBLE</a></li>
+					</ul>
+					<a href="<?php echo home_url(); ?>/virtual-designer" class="btn-main">VIEW OUR SELECTION</a>
+					<a href="<?php echo home_url(); ?>/virtual-designer" class="btn-main">VIRTUAL DESIGNER</a>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- selections -->
+	<section id="brands">
+		<div class="container">
+			<div class="row">
+					<h2>BRANDS WE CARRY</h2>
+					<div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0 grid">
+							<?php if( have_rows('brands') ):
+					    	while ( have_rows('brands') ) : the_row();?>
+
+									<div class="grid-item">
+					        	<img src="<?php the_sub_field('brand_icon'); ?>" alt="Icon" />
+									</div>
+
+
+					    	<?php endwhile; else :?>
+							</div>
+							<?php endif; ?>
+
+
+				</div><!-- row -->
+			</div><!-- container -->
+	</section><!-- brands -->
+	<section id="reviews">
+
+		<h2>J & J Tile & Marble Inc</h2>
+		<p>4763 Jefferson Davis Hwy, Fredericksburg, VA</p>
+
+		<?php get_sidebar(); ?>
+		
+	</section><!-- reviews -->
+
+
+
+
+
+
+
+
+
+<?php get_footer(); ?>

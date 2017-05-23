@@ -1,0 +1,30 @@
+/*======================== mixins ================================================*/
+.button{
+  display: block;
+  position: relative;
+  border: solid 1px #fff;
+  color: #fff;
+  padding: 5px ;
+  width: 130px;
+  text-align: center;
+  margin:0 auto;
+  font-size: 10px;
+}
+.button-tan{
+  display: block;
+  position: relative;
+  border: solid 1px $tan;
+  color: $tan;
+  padding: 5px ;
+  width: 130px;
+  text-align: center;
+  margin:10px 0 0 42px;
+  font-size: 10px;
+}
+.sprite{
+  display: inline-block;
+  width: 143px;
+  height: 130.5px;
+  margin: 10px 5px 0 0;
+
+}
