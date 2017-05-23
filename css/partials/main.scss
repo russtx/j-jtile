@@ -145,7 +145,7 @@
   }
 }
 .grid{
-  padding:20px 
+  padding:20px
 }
 .grid-item {
   width: 180px;
@@ -154,5 +154,133 @@
     display: block;
     margin: 10px auto;
     width: 180px;
+  }
+}
+.reviewHeader{
+  h2{
+    color:$dark-brown;
+    padding: 0 0 0 0;
+    margin: 20px 0 0 0;
+    font-size: 22px;
+  }
+  p{
+    color: $grey;
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
+}
+.facebookLink{
+  a.btn-main{
+    @extend .button-facebook;
+  }
+}
+.facebookWidgetArea{
+  overflow-y: scroll;
+  max-height:150px;
+}
+.contact-form{
+  background-color: $light-tan;
+  h2{
+    background-color: $orange;
+    color: $dark-brown;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+  }
+  .form-control{
+    border:none;
+    box-shadow: none;
+    color: $dark-brown;
+    border-bottom: 1px solid $dark-brown;
+    border-radius:0;
+    background-color: transparent;
+  }
+  ::placeholder {
+   color:$dark-brown;
+  }
+  input.wpcf7-form-control.wpcf7-submit{
+    display: block;
+    background-color: transparent;
+    margin: 0 auto;
+    border: 1px solid $dark-brown;
+    padding: 4px;
+  }
+}
+.facebookPlugin{
+  display: block;
+    margin: 0 auto;
+    max-width: 340px;
+    width: 100%;
+    padding-top: 35px;
+
+}
+.fb_iframe_widget{
+  //display: block !important;
+  //margin:0 auto;
+  //max-width:340px;
+}
+.contactInfo{
+  ul{
+    list-style: none;
+    padding-top:40px;
+    li{
+      padding: 20px 0;
+      height:100px;
+      a{
+        color: $dark-brown;
+        font-size: 18px;
+        span{
+          float: left;
+        }
+        .mailIcon{
+          background: url(./images/mail-icon-sprite-1.png);
+          background-repeat: no-repeat;
+          width: 46px;
+          height: 44.5px;
+          display: block;
+          //float: left;
+          margin-right: 20px;
+          &:hover{
+            background-position-y:-44.5px;
+          }
+        }
+        .phoneIcon{
+          background: url(./images/phone-icon-sprite-1.png);
+          background-repeat: no-repeat;
+          width: 46px;
+          height: 44.5px;
+          display: block;
+          //float: left;
+          margin-right: 20px;
+          &:hover{
+            background-position-y:-44.5px;
+          }
+        }
+        .mapIcon{
+          background: url(./images/map-icon-sprite-1.png);
+          background-repeat: no-repeat;
+          width: 46px;
+          height: 44.5px;
+          display: block;
+          //float: left;
+          margin-right: 20px;
+          &:hover{
+            background-position-y:-44.5px;
+          }
+        }
+        .shopIcon{
+          background: url(./images/shop-icon-sprite-1.png);
+          background-repeat: no-repeat;
+          width: 46px;
+          height: 44.5px;
+          display: block;
+          //float: left;
+          margin-right: 20px;
+          &:hover{
+            background-position-y:-44.5px;
+          }
+        }
+      }
+    }
   }
 }

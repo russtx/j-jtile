@@ -88,24 +88,19 @@
       }
     }
 }
-.sliderButtons{
-  display: block;
-  width: 100%;
-  height:50px;
-  z-index: 9999;
-  margin-top: -515px;
-}
+
 a.btn-main{
   @extend .button;
 
 }
 .carousel-control{
-  top:470px;
+  top:initial;
   left:auto;
   z-index: 9999;
   height: 50px;
   width: 20px;
   opacity: .8;
+  bottom:30px;
   .glyphicon-chevron-left, .glyphicon-chevron-right {
      background-color: $dark-brown;
      background-image: none;
@@ -116,6 +111,9 @@ a.btn-main{
      font-weight: 500;
   }
 
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+  top:initial;
 }
 .carousel-control.left{
   background-image: none;
@@ -128,7 +126,7 @@ a.btn-main{
 }
 #scrollDown {
   position: absolute;
-  bottom: 8px;
+  bottom: 22px;
   left: 0;
   right: 0;
   text-align: center;
@@ -140,5 +138,23 @@ a.btn-main{
       display: block;
       font-size: 27px;
       color: #fff;
+  }
+}
+.sliderButtons{
+  display: block;
+  width: 100%;
+  height:50px;
+  z-index: 9999;
+  position: absolute;
+  bottom: -48px;
+  .left{
+    position: relative;
+    bottom:127px;
+    float: right;
+  }
+  .right{
+    position: relative;
+    bottom:127px;
+    float: left;
   }
 }

@@ -21,6 +21,20 @@
   margin:10px 0 0 42px;
   font-size: 10px;
 }
+.button-facebook{
+  display: block;
+  position: relative;
+  float: right;
+  border: solid 1px $facebook-blue;
+  background-color: $facebook-blue;
+  color: #fff;
+  padding: 5px ;
+  width: 125px;
+  text-align: center;
+  margin:20px 0 0 0px;
+  font-size: 12px;
+  font-weight: 600;
+}
 .sprite{
   display: inline-block;
   width: 143px;

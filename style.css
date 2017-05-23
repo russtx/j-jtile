@@ -47,6 +47,21 @@ import bootstrap
   font-size: 10px;
 }
 
+.button-facebook, .facebookLink a.btn-main {
+  display: block;
+  position: relative;
+  float: right;
+  border: solid 1px #5881c1;
+  background-color: #5881c1;
+  color: #fff;
+  padding: 5px;
+  width: 125px;
+  text-align: center;
+  margin: 20px 0 0 0px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .sprite, #aboutHomeSection .aboutIcons .sprite-1, #aboutHomeSection .aboutIcons .sprite-2, #aboutHomeSection .aboutIcons .sprite-3, #aboutHomeSection .aboutIcons .sprite-4 {
   display: inline-block;
   width: 143px;
@@ -125,6 +140,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Heebo', sans-serif;
   font-weight: 500;
   line-height: 1.1;
+}
+
+#main-container {
+  width: 100%;
+  overflow: hidden;
 }
 
 /*======================= Header ============================================ */
@@ -227,21 +247,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-align: center;
 }
 
-.sliderButtons {
-  display: block;
-  width: 100%;
-  height: 50px;
-  z-index: 9999;
-  margin-top: -515px;
-}
-
 .carousel-control {
-  top: 470px;
+  top: initial;
   left: auto;
   z-index: 9999;
   height: 50px;
   width: 20px;
   opacity: .8;
+  bottom: 30px;
 }
 
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
@@ -252,6 +265,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding-top: 22px;
   font-size: 15px;
   font-weight: 500;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+  top: initial;
 }
 
 .carousel-control.left {
@@ -267,7 +284,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 #scrollDown {
   position: absolute;
-  bottom: 8px;
+  bottom: 22px;
   left: 0;
   right: 0;
   text-align: center;
@@ -281,6 +298,27 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   display: block;
   font-size: 27px;
   color: #fff;
+}
+
+.sliderButtons {
+  display: block;
+  width: 100%;
+  height: 50px;
+  z-index: 9999;
+  position: absolute;
+  bottom: -48px;
+}
+
+.sliderButtons .left {
+  position: relative;
+  bottom: 127px;
+  float: right;
+}
+
+.sliderButtons .right {
+  position: relative;
+  bottom: 127px;
+  float: left;
 }
 
 /*================================= Main SCSS ================================================*/
@@ -451,7 +489,281 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   width: 180px;
 }
 
+.reviewHeader h2 {
+  color: #211d1e;
+  padding: 0 0 0 0;
+  margin: 20px 0 0 0;
+  font-size: 22px;
+}
+
+.reviewHeader p {
+  color: #939393;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.facebookWidgetArea {
+  overflow-y: scroll;
+  max-height: 150px;
+}
+
+.contact-form {
+  background-color: #ededef;
+}
+
+.contact-form h2 {
+  background-color: #f48321;
+  color: #211d1e;
+  font-weight: 800;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-form .form-control {
+  border: none;
+  box-shadow: none;
+  color: #211d1e;
+  border-bottom: 1px solid #211d1e;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.contact-form ::placeholder {
+  color: #211d1e;
+}
+
+.contact-form input.wpcf7-form-control.wpcf7-submit {
+  display: block;
+  background-color: transparent;
+  margin: 0 auto;
+  border: 1px solid #211d1e;
+  padding: 4px;
+}
+
+.facebookPlugin {
+  display: block;
+  margin: 0 auto;
+  max-width: 340px;
+  width: 100%;
+  padding-top: 35px;
+}
+
+.contactInfo ul {
+  list-style: none;
+  padding-top: 40px;
+}
+
+.contactInfo ul li {
+  padding: 20px 0;
+  height: 100px;
+}
+
+.contactInfo ul li a {
+  color: #211d1e;
+  font-size: 18px;
+}
+
+.contactInfo ul li a span {
+  float: left;
+}
+
+.contactInfo ul li a .mailIcon {
+  background: url(./images/mail-icon-sprite-1.png);
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 44.5px;
+  display: block;
+  margin-right: 20px;
+}
+
+.contactInfo ul li a .mailIcon:hover {
+  background-position-y: -44.5px;
+}
+
+.contactInfo ul li a .phoneIcon {
+  background: url(./images/phone-icon-sprite-1.png);
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 44.5px;
+  display: block;
+  margin-right: 20px;
+}
+
+.contactInfo ul li a .phoneIcon:hover {
+  background-position-y: -44.5px;
+}
+
+.contactInfo ul li a .mapIcon {
+  background: url(./images/map-icon-sprite-1.png);
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 44.5px;
+  display: block;
+  margin-right: 20px;
+}
+
+.contactInfo ul li a .mapIcon:hover {
+  background-position-y: -44.5px;
+}
+
+.contactInfo ul li a .shopIcon {
+  background: url(./images/shop-icon-sprite-1.png);
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 44.5px;
+  display: block;
+  margin-right: 20px;
+}
+
+.contactInfo ul li a .shopIcon:hover {
+  background-position-y: -44.5px;
+}
+
 /*================Footer =============*/
+footer {
+  background-color: #3e3934;
+}
+
+#darkBar {
+  position: relative;
+  top: 30px;
+  padding: 0;
+  background-color: #211d1e;
+}
+
+#darkBar .navbar-brand {
+  padding: 18px 0;
+}
+
+#darkBar .navbar-brand img {
+  height: 50px;
+}
+
+.footerSocials .twitter {
+  display: block;
+  float: left;
+  background-image: url(./images/twitter-sprite-1.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin: 20px 10px 0 0;
+}
+
+.footerSocials .twitter:hover {
+  background-position-y: -50px;
+}
+
+.footerSocials .instagram {
+  display: block;
+  float: left;
+  background-image: url(./images/instagram-sprite-1.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin: 20px 10px 0 0;
+}
+
+.footerSocials .instagram:hover {
+  background-position-y: -50px;
+}
+
+.footerSocials .linkedIn {
+  display: block;
+  float: left;
+  background-image: url(./images/linkedIn-sprite-1.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin: 20px 10px 0 0;
+}
+
+.footerSocials .linkedIn:hover {
+  background-position-y: -50px;
+}
+
+.footerSocials .facebook {
+  display: block;
+  float: left;
+  background-image: url(./images/facebook-sprite-1.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin: 20px 10px 0 0;
+}
+
+.footerSocials .facebook:hover {
+  background-position-y: -50px;
+}
+
+.footerInfo {
+  color: #fff;
+}
+
+.footerInfo h3 {
+  font-size: 20px;
+  padding: 0px 0 0 0;
+  margin: 1px 0 1px 0;
+}
+
+.footerInfo h4 {
+  font-size: 15px;
+  padding: 5px 0 0 0;
+}
+
+.footerInfo a {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.footerHours {
+  margin-top: 10px;
+}
+
+.footerLeft {
+  color: #fff;
+}
+
+.footerLeft p {
+  margin-top: 20px;
+}
+
+.footerLeft p:first-child {
+  margin-top: 40px;
+}
+
+.footerRight h2 {
+  color: #fff;
+  padding: 20px 0 0 32px;
+}
+
+.footer-nav ul li {
+  padding: 0 20px;
+}
+
+.footer-nav ul li a {
+  color: #f48321;
+  font-size: 20px;
+}
+
+.footer-nav ul li a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.footerBottom {
+  padding-top: 30px;
+}
+
+.footerBottom p {
+  text-align: center;
+  color: #f48321;
+}
+
+.footerBottom p a {
+  color: #f48321;
+}
+
 /* responsive settings */
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Sass Bootstrap */
@@ -463,6 +775,38 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /* Small devices (tablets, 768px and up) ====================================================================================================*/
+@media (min-width: 768px) {
+  .navbar-brand {
+    padding: 5px 20px;
+  }
+  .navbar-brand img {
+    height: 30px;
+  }
+  .flex {
+    display: block;
+    float: left;
+    width: initial;
+    position: relative;
+    left: 40px;
+  }
+  .phone p {
+    font-size: 8px;
+  }
+  .phone a {
+    font-size: 11px;
+  }
+  .nav li a {
+    padding: 10px 6px;
+    font-size: 10px;
+  }
+  .navbar-header {
+    height: 8vh;
+  }
+  .carousel-inner {
+    height: 92vh;
+  }
+}
+
 /* Medium devices (desktops, 992px and up) ==================================================================================================*/
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
