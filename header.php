@@ -55,6 +55,7 @@
       </div>
       </nav>
 
+      <div class="nav-line"></div>
 
       <?php if(is_front_page()): ?>
 
@@ -94,6 +95,7 @@
           endif;
 
           ?>
+
           <div class="container">
             <div class="row">
               <div class="sliderButtons ">
@@ -152,6 +154,15 @@
         <?php else: ?>
 
           <h1><?php echo get_the_title(); ?></h1>
+
+        <?php endif; ?>
+        <?php if(get_field('hero_sub-title')): ?>
+
+          <?php the_field('hero_sub-title'); ?>
+
+        <?php else: ?>
+
+          <?php echo get_the_sub-title(); ?>
 
         <?php endif; ?>
 

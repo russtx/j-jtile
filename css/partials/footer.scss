@@ -79,6 +79,10 @@ footer{
     color: #fff;
     font-size: 30px;
     margin-top:5px;
+    text-decoration: none;
+    &:hover{
+      color:$orange;
+    }
   }
 }
 .footerHours{
@@ -100,6 +104,9 @@ footer{
   }
 }
 .footer-nav{
+  .nav{
+    padding-left: 0;
+  }
   ul{
     li{
       padding: 0 20px;

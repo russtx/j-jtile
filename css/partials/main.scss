@@ -37,75 +37,46 @@
   .aboutContent{
     h2{
       color: $orange;
-      font-weight: 700;
+      font-weight: 900;
     }
     p{
       color: $dark-brown;
     }
   }
-  .aboutIcons{
-    h2{
+
+}
+.aboutIcons{
+  h2{
+    color: $dark-brown;
+    font-weight: 700;
+  }
+  .icons{
+    display: block;
+    min-height: 200px;
+  }
+  .spriteBox{
+    display: block;
+    width:125px;
+    margin:0 auto;
+    a{
+      text-decoration: none;
+
+    }
+
+    .spriteText{
+      display: block;
       color: $dark-brown;
-      font-weight: 700;
-    }
-    .icons{
-      display: block;
-      min-height: 200px;
-    }
-    .spriteBox{
-      display: block;
-      width:125px;
-      margin:0 auto;
-      a{
-        text-decoration: none;
-
-      }
-
-      .spriteText{
-        display: block;
-        color: $dark-brown;
-        position: relative;
-        top: 150px;
-        text-align: center;
-        font-size: 18px;
-        &:hover{
-          color: $orange;
-        }
-      }
-    }
-    .sprite-1{
-      background: url(./images/learn-more-sprite-125.png);
-      background-position-y: -130.5px;
-      background-repeat: no-repeat;
+      position: relative;
+      top: 150px;
+      text-align: center;
+      font-size: 18px;
       &:hover{
-        background-position-y: 0;
+        color: $orange;
       }
-      @extend .sprite;
-
     }
-    .sprite-2{
-      background: url(./images/tile-sprite.png);
-      background-position-y: -130.5px;
-      background-repeat: no-repeat;
-      &:hover{
-        background-position-y: 0;
-      }
-      @extend .sprite;
-
-    }
-    .sprite-3{
-      background: url(./images/grout-sprite.png);
-      background-position-y: -130.5px;
-      background-repeat: no-repeat;
-      &:hover{
-        background-position-y: 0;
-      }
-      @extend .sprite;
-
-    }
-
-  .sprite-4{
-    background: url(./images/ruler-sprite.png);
+  }
+  .sprite-1{
+    background: url(./images/learn-more-sprite-125.png);
     background-position-y: -130.5px;
     background-repeat: no-repeat;
     &:hover{
@@ -113,7 +84,47 @@
     }
     @extend .sprite;
 
+  }
+  .sprite-2{
+    background: url(./images/tile-sprite.png);
+    background-position-y: -130.5px;
+    background-repeat: no-repeat;
+    &:hover{
+      background-position-y: 0;
     }
+    @extend .sprite;
+
+  }
+  .sprite-3{
+    background: url(./images/grout-sprite.png);
+    background-position-y: -130.5px;
+    background-repeat: no-repeat;
+    &:hover{
+      background-position-y: 0;
+    }
+    @extend .sprite;
+
+  }
+
+.sprite-4{
+  background: url(./images/ruler-sprite.png);
+  background-position-y: -130.5px;
+  background-repeat: no-repeat;
+  &:hover{
+    background-position-y: 0;
+  }
+  @extend .sprite;
+
+  }
+.sprite-5{
+  background: url(./images/phone-sprite-1.png);
+  background-position-y: -130.5px;
+  background-repeat: no-repeat;
+  &:hover{
+    background-position-y: 0;
+  }
+  @extend .sprite;
+
   }
 }
 #selections{
@@ -130,11 +141,20 @@
       a{
         color: $orange;
         font-size: 20px;
+        text-decoration: none;
+        &:hover{
+          color:$tint-2;
+        }
       }
     }
   }
   a.btn-main{
     @extend .button-tan;
+    text-decoration: none;
+    &:hover{
+      color: #fff;
+      border-color: #fff;
+    }
   }
 }
 #brands{
@@ -154,6 +174,9 @@
     display: block;
     margin: 10px auto;
     width: 180px;
+    &:hover{
+      width:200px;
+    }
   }
 }
 .reviewHeader{
@@ -172,6 +195,12 @@
 .facebookLink{
   a.btn-main{
     @extend .button-facebook;
+    text-decoration: none;
+    &:hover{
+      border: 1px solid $facebook-blue;
+      color: $facebook-blue;
+      background-color: #fff;
+    }
   }
 }
 .facebookWidgetArea{
@@ -214,11 +243,7 @@
     padding-top: 35px;
 
 }
-.fb_iframe_widget{
-  //display: block !important;
-  //margin:0 auto;
-  //max-width:340px;
-}
+
 .contactInfo{
   ul{
     list-style: none;
@@ -282,5 +307,42 @@
         }
       }
     }
+  }
+}
+.iconBackground{
+  display: inline-block;
+  background-color: $light-tan;
+  width: 100%;
+  padding-bottom: 40px;
+
+}
+#aboutIconArea{
+  .scrollDown{
+    .glyphicon{
+      color: $dark-brown;
+      width: 36px;
+      margin: 0 auto;
+      display: block;
+      font-size: 36px;
+      top: -46px;
+    }
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+  a{
+    text-decoration: none;
   }
 }

@@ -62,7 +62,7 @@ import bootstrap
   font-weight: 600;
 }
 
-.sprite, #aboutHomeSection .aboutIcons .sprite-1, #aboutHomeSection .aboutIcons .sprite-2, #aboutHomeSection .aboutIcons .sprite-3, #aboutHomeSection .aboutIcons .sprite-4 {
+.sprite, .aboutIcons .sprite-1, .aboutIcons .sprite-2, .aboutIcons .sprite-3, .aboutIcons .sprite-4, .aboutIcons .sprite-5 {
   display: inline-block;
   width: 143px;
   height: 130.5px;
@@ -147,9 +147,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   overflow: hidden;
 }
 
+.clearfix {
+  clear: both;
+}
+
 /*======================= Header ============================================ */
 .navbar-default {
   background-color: rgba(33, 29, 30, 0.8);
+  border-color: transparent;
+  border-radius: 0;
 }
 
 .navbar-default .navbar-nav li a {
@@ -178,6 +184,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   height: 20vh;
 }
 
+.nav-line {
+  display: block;
+  position: relative;
+  top: -20px;
+  width: 100%;
+  height: 1vh;
+  border-bottom: solid 2px rgba(33, 29, 30, 0.8);
+  background-color: transparent;
+  z-index: 9999;
+}
+
 .flex {
   display: flex;
   width: 100%;
@@ -199,6 +216,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #fff;
   font-size: 26px;
   line-height: 1.3;
+  text-decoration: none;
+}
+
+.phone a:hover {
+  color: #f48321;
 }
 
 .hours {
@@ -217,12 +239,41 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .carousel-inner {
-  height: 80vh;
-  top: -20px;
+  height: 80.1vh;
+  top: -28px;
   z-index: 99;
 }
 
 #mainPhoto {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 330px;
+  top: -210px;
+}
+
+#heroSection {
+  height: 150px;
+}
+
+#heroSection h1 {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  color: #f48321;
+  font-weight: 900;
+}
+
+#heroSection p {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.home #mainPhoto {
+  top: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: -194px;
@@ -307,6 +358,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   z-index: 9999;
   position: absolute;
   bottom: -48px;
+  left: 0;
 }
 
 .sliderButtons .left {
@@ -365,34 +417,34 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 #aboutHomeSection .aboutContent h2 {
   color: #f48321;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 #aboutHomeSection .aboutContent p {
   color: #211d1e;
 }
 
-#aboutHomeSection .aboutIcons h2 {
+.aboutIcons h2 {
   color: #211d1e;
   font-weight: 700;
 }
 
-#aboutHomeSection .aboutIcons .icons {
+.aboutIcons .icons {
   display: block;
   min-height: 200px;
 }
 
-#aboutHomeSection .aboutIcons .spriteBox {
+.aboutIcons .spriteBox {
   display: block;
   width: 125px;
   margin: 0 auto;
 }
 
-#aboutHomeSection .aboutIcons .spriteBox a {
+.aboutIcons .spriteBox a {
   text-decoration: none;
 }
 
-#aboutHomeSection .aboutIcons .spriteBox .spriteText {
+.aboutIcons .spriteBox .spriteText {
   display: block;
   color: #211d1e;
   position: relative;
@@ -401,47 +453,57 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 18px;
 }
 
-#aboutHomeSection .aboutIcons .spriteBox .spriteText:hover {
+.aboutIcons .spriteBox .spriteText:hover {
   color: #f48321;
 }
 
-#aboutHomeSection .aboutIcons .sprite-1 {
+.aboutIcons .sprite-1 {
   background: url(./images/learn-more-sprite-125.png);
   background-position-y: -130.5px;
   background-repeat: no-repeat;
 }
 
-#aboutHomeSection .aboutIcons .sprite-1:hover {
+.aboutIcons .sprite-1:hover {
   background-position-y: 0;
 }
 
-#aboutHomeSection .aboutIcons .sprite-2 {
+.aboutIcons .sprite-2 {
   background: url(./images/tile-sprite.png);
   background-position-y: -130.5px;
   background-repeat: no-repeat;
 }
 
-#aboutHomeSection .aboutIcons .sprite-2:hover {
+.aboutIcons .sprite-2:hover {
   background-position-y: 0;
 }
 
-#aboutHomeSection .aboutIcons .sprite-3 {
+.aboutIcons .sprite-3 {
   background: url(./images/grout-sprite.png);
   background-position-y: -130.5px;
   background-repeat: no-repeat;
 }
 
-#aboutHomeSection .aboutIcons .sprite-3:hover {
+.aboutIcons .sprite-3:hover {
   background-position-y: 0;
 }
 
-#aboutHomeSection .aboutIcons .sprite-4 {
+.aboutIcons .sprite-4 {
   background: url(./images/ruler-sprite.png);
   background-position-y: -130.5px;
   background-repeat: no-repeat;
 }
 
-#aboutHomeSection .aboutIcons .sprite-4:hover {
+.aboutIcons .sprite-4:hover {
+  background-position-y: 0;
+}
+
+.aboutIcons .sprite-5 {
+  background: url(./images/phone-sprite-1.png);
+  background-position-y: -130.5px;
+  background-repeat: no-repeat;
+}
+
+.aboutIcons .sprite-5:hover {
   background-position-y: 0;
 }
 
@@ -463,6 +525,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .selectionList ul li a {
   color: #f48321;
   font-size: 20px;
+  text-decoration: none;
+}
+
+.selectionList ul li a:hover {
+  color: rgba(244, 131, 33, 0.5);
+}
+
+.selectionList a.btn-main {
+  text-decoration: none;
+}
+
+.selectionList a.btn-main:hover {
+  color: #fff;
+  border-color: #fff;
 }
 
 #brands {
@@ -489,6 +565,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   width: 180px;
 }
 
+.grid-item img:hover {
+  width: 200px;
+}
+
 .reviewHeader h2 {
   color: #211d1e;
   padding: 0 0 0 0;
@@ -500,6 +580,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #939393;
   padding-bottom: 20px;
   font-size: 12px;
+}
+
+.facebookLink a.btn-main {
+  text-decoration: none;
+}
+
+.facebookLink a.btn-main:hover {
+  border: 1px solid #5881c1;
+  color: #5881c1;
+  background-color: #fff;
 }
 
 .facebookWidgetArea {
@@ -619,6 +709,42 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-position-y: -44.5px;
 }
 
+.iconBackground {
+  display: inline-block;
+  background-color: #ededef;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+#aboutIconArea .scrollDown .glyphicon {
+  color: #211d1e;
+  width: 36px;
+  margin: 0 auto;
+  display: block;
+  font-size: 36px;
+  top: -46px;
+}
+
+#aboutIconArea .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+#aboutIconArea .video-container iframe, #aboutIconArea .video-container object, #aboutIconArea .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#aboutIconArea a {
+  text-decoration: none;
+}
+
 /*================Footer =============*/
 footer {
   background-color: #3e3934;
@@ -714,6 +840,11 @@ footer {
   color: #fff;
   font-size: 30px;
   margin-top: 5px;
+  text-decoration: none;
+}
+
+.footerInfo a:hover {
+  color: #f48321;
 }
 
 .footerHours {
@@ -735,6 +866,10 @@ footer {
 .footerRight h2 {
   color: #fff;
   padding: 20px 0 0 32px;
+}
+
+.footer-nav .nav {
+  padding-left: 0;
 }
 
 .footer-nav ul li {
@@ -795,6 +930,10 @@ footer {
   .phone a {
     font-size: 11px;
   }
+  .nav {
+    position: relative;
+    top: 15px;
+  }
   .nav li a {
     padding: 10px 6px;
     font-size: 10px;
@@ -802,13 +941,98 @@ footer {
   .navbar-header {
     height: 8vh;
   }
+  .home #mainPhoto {
+    background-position-x: 0px;
+  }
   .carousel-inner {
     height: 92vh;
+  }
+  .sliderButtons {
+    bottom: 100px;
+  }
+  .sliderButtons a.btn-main {
+    width: 180px;
+    font-size: 15px;
+  }
+  #finance .leftFinance h2 {
+    font-size: 70px;
+    font-weight: 900;
+  }
+  #finance .rightFinance h3 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  #finance .rightFinance h4 {
+    font-size: 19px;
   }
 }
 
 /* Medium devices (desktops, 992px and up) ==================================================================================================*/
+@media (min-width: 992px) {
+  .navbar-brand img {
+    height: 40px;
+  }
+  .phone p {
+    font-size: 10px;
+  }
+  .phone a {
+    font-size: 24px;
+  }
+  .flex {
+    left: 80px;
+  }
+  .nav {
+    top: 5px;
+    padding-left: 0px;
+  }
+  .nav li a {
+    padding: 20px 11px;
+    font-size: 14px;
+  }
+  .sliderButtons a.btn-main {
+    width: 220px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #fff;
+  }
+  #finance .leftFinance h2 {
+    font-size: 130px;
+  }
+  #finance .rightFinance h3 {
+    font-size: 72px;
+  }
+  #finance .rightFinance h4 {
+    font-size: 35px;
+  }
+  .selectionList ul li a {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .selectionList a.btn-main {
+    border: 2px solid #e1caa2;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
+@media (min-width: 1200px) {
+  .nav {
+    padding-left: 80px;
+  }
+  .selectionList ul li a {
+    font-size: 42px;
+  }
+  .selectionList a.btn-main {
+    width: 240px;
+    font-size: 18px;
+  }
+  #brands h2 {
+    font-size: 32px;
+  }
+}
+
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
 /***********
 theme styles

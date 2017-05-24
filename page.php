@@ -1,12 +1,6 @@
 <?php get_header(); ?>
 
-<section id="hero"  >
-	<div class="heroImage" style="background-image: url(<?php the_field('hero_image'); ?>);">
-		<h1><?php echo get_field('hero_title'); ?></h1>
-	</div>
 
-
-</section><!-- heroTrails -->
 
 
 	<!-- section -->
