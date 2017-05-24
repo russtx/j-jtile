@@ -156,6 +156,7 @@
           <h1><?php echo get_the_title(); ?></h1>
 
         <?php endif; ?>
+
         <?php if(get_field('hero_sub-title')): ?>
 
           <?php the_field('hero_sub-title'); ?>

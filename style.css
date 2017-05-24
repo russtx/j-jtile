@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-size: cover;
   background-repeat: no-repeat;
   height: 330px;
-  top: -210px;
+  top: -229px;
 }
 
 #heroSection {
@@ -725,7 +725,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   top: -46px;
 }
 
-#aboutIconArea .video-container {
+#aboutIconArea a {
+  text-decoration: none;
+}
+
+#video {
+  margin-top: -40px;
+  background-color: #211d1e;
+}
+
+.video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -733,7 +742,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   overflow: hidden;
 }
 
-#aboutIconArea .video-container iframe, #aboutIconArea .video-container object, #aboutIconArea .video-container embed {
+.video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -741,8 +750,135 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   height: 100%;
 }
 
-#aboutIconArea a {
-  text-decoration: none;
+.videoLeft {
+  display: block;
+}
+
+.videoRight {
+  display: block;
+  padding-top: 30px;
+  color: #f48321;
+  text-align: center;
+}
+
+.videoRight h2 {
+  font-size: 150px;
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.videoRight h3 {
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.videoRight h4 {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.page-id-17 #mainPhoto {
+  height: 380px;
+}
+
+.page-id-17 #heroSection h1 {
+  color: #fff;
+  top: 250px;
+}
+
+#contactInfo {
+  display: block;
+  background: url(./images/map-background-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 34px;
+}
+
+#contact-2 .reviewHeader {
+  margin-top: 40px;
+}
+
+#contact-2 .facebookLink {
+  margin-top: 40px;
+}
+
+#followUs h2 {
+  text-align: center;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+
+#followUs .twitter {
+  display: block;
+  float: left;
+  background-image: url(./images/twitter-sprite-1.png);
+  background-repeat: no-repeat;
+  background-position-y: -50px;
+  height: 50px;
+  width: 50px;
+  margin: 15px 10px 0 0;
+}
+
+#followUs .twitter:hover {
+  background-position-y: 0px;
+}
+
+#followUs .instagram {
+  display: block;
+  float: left;
+  background-image: url(./images/instagram-sprite-1.png);
+  background-repeat: no-repeat;
+  background-position-y: -50px;
+  height: 50px;
+  width: 50px;
+  margin: 15px 10px 0 0;
+}
+
+#followUs .instagram:hover {
+  background-position-y: 0px;
+}
+
+#followUs .linkedIn {
+  display: block;
+  float: left;
+  background-image: url(./images/linkedIn-sprite-1.png);
+  background-repeat: no-repeat;
+  background-position-y: -50px;
+  height: 50px;
+  width: 50px;
+  margin: 15px 10px 0 0;
+}
+
+#followUs .linkedIn:hover {
+  background-position-y: 0px;
+}
+
+#followUs .facebook {
+  display: block;
+  float: left;
+  background-image: url(./images/facebook-sprite-1.png);
+  background-repeat: no-repeat;
+  background-position-y: -50px;
+  height: 50px;
+  width: 50px;
+  margin: 15px 0px 0 0;
+}
+
+#followUs .facebook:hover {
+  background-position-y: 0px;
+}
+
+#followUs .socialLinks {
+  display: block;
+  width: 230px;
+  margin: 0 auto;
+  height: 85px;
 }
 
 /*================Footer =============*/
@@ -763,6 +899,11 @@ footer {
 
 #darkBar .navbar-brand img {
   height: 50px;
+}
+
+.footerSocials {
+  position: relative;
+  left: 20px;
 }
 
 .footerSocials .twitter {
@@ -941,8 +1082,12 @@ footer {
   .navbar-header {
     height: 8vh;
   }
+  #mainPhoto {
+    top: -195px;
+  }
   .home #mainPhoto {
     background-position-x: 0px;
+    top: 0;
   }
   .carousel-inner {
     height: 92vh;
@@ -964,6 +1109,21 @@ footer {
   }
   #finance .rightFinance h4 {
     font-size: 19px;
+  }
+  .videoLeft {
+    width: 65%;
+    float: left;
+  }
+  .videoRight {
+    padding-top: 19%;
+    width: 35%;
+    float: left;
+  }
+  .footerInfo a {
+    font-size: 17px;
+  }
+  .footerSocials {
+    margin-bottom: 10px;
   }
 }
 
@@ -1014,12 +1174,46 @@ footer {
     font-size: 14px;
     font-weight: 700;
   }
+  .videoRight h2 {
+    font-size: 200px;
+  }
+  .videoRight h3 {
+    font-size: 42px;
+  }
+  .videoRight h4 {
+    font-size: 22px;
+  }
+  .page-id-17 #heroSection h1 {
+    font-size: 60px;
+  }
+  #contact-2 {
+    padding-bottom: 40px;
+  }
+  #contact-2 .facebookWidgetArea {
+    max-height: 390px;
+  }
+  #followUs h2 {
+    font-size: 48px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 @media (min-width: 1200px) {
   .nav {
     padding-left: 80px;
+  }
+  #heroSection h1 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+  #heroSection p {
+    font-size: 20px;
+  }
+  #mainPhoto {
+    height: 350px;
+  }
+  #aboutContent {
+    margin-top: 20px;
   }
   .selectionList ul li a {
     font-size: 42px;

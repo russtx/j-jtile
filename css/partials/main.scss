@@ -1,4 +1,5 @@
 /*================================= Main SCSS ================================================*/
+
 #finance{
   background-color: $dark-brown;
   color:$orange;
@@ -326,6 +327,14 @@
       font-size: 36px;
       top: -46px;
     }
+  }
+  a{
+    text-decoration: none;
+  }
+}
+#video{
+  margin-top: -40px;
+  background-color: $dark-brown;
 }
 .video-container {
 	position:relative;
@@ -334,6 +343,7 @@
 	height:0;
 	overflow:hidden;
 }
+
 .video-container iframe, .video-container object, .video-container embed {
 	position:absolute;
 	top:0;
@@ -341,8 +351,123 @@
 	width:100%;
 	height:100%;
 }
+.videoLeft{
+  display: block;
+}
+.videoRight{
+  display: block;
+  padding-top:30px;
+  color: $orange;
+  text-align: center;
 
-  a{
-    text-decoration: none;
+  h2{
+    font-size: 150px;
+    padding: 0;
+    margin:0;
+    font-weight: 900;
+    line-height: 1;
+  }
+  h3{
+    font-size: 40px;
+    padding: 0;
+    margin:0;
+    font-weight: 700;
+  }
+  h4{
+    font-size: 20px;
+    padding: 0;
+    margin:0;
+  }
+}
+.page-id-17{
+  #mainPhoto{
+    height:380px;
+  }
+  #heroSection{
+    h1{
+      color: #fff;
+      top:250px;
+    }
+  }
+}
+#contactInfo{
+  display: block;
+  background: url(./images/map-background-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 34px;
+}
+#contact-2{
+  .reviewHeader{
+    margin-top: 40px;
+  }
+  .facebookLink{
+    margin-top: 40px;
+  }
+}
+#followUs{
+  h2{
+    text-align: center;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+  }
+  .twitter{
+    display: block;
+    float: left;
+    background-image: url(./images/twitter-sprite-1.png);
+    background-repeat: no-repeat;
+    background-position-y:-50px;
+    height:50px;
+    width:50px;
+    margin: 15px 10px 0 0;
+    &:hover{
+      background-position-y:0px;
+    }
+  }
+  .instagram{
+    display: block;
+    float: left;
+    background-image: url(./images/instagram-sprite-1.png);
+    background-repeat: no-repeat;
+    background-position-y:-50px;
+    height:50px;
+    width:50px;
+    margin: 15px 10px 0 0;
+    &:hover{
+      background-position-y:0px;
+    }
+  }
+  .linkedIn{
+    display: block;
+    float: left;
+    background-image: url(./images/linkedIn-sprite-1.png);
+    background-repeat: no-repeat;
+    background-position-y:-50px;
+    height:50px;
+    width:50px;
+    margin: 15px 10px 0 0;
+    &:hover{
+      background-position-y:0px;
+    }
+  }
+  .facebook{
+    display: block;
+    float: left;
+    background-image: url(./images/facebook-sprite-1.png);
+    background-repeat: no-repeat;
+    background-position-y:-50px;
+    height:50px;
+    width:50px;
+    margin: 15px 0px 0 0;
+    &:hover{
+      background-position-y:0px;
+    }
+  }
+  .socialLinks{
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    height: 85px;
   }
 }
