@@ -807,6 +807,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 40px;
 }
 
+#followUs {
+  background-color: #ededef;
+  padding-bottom: 60px;
+}
+
 #followUs h2 {
   text-align: center;
   font-weight: 900;
@@ -879,6 +884,68 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   width: 230px;
   margin: 0 auto;
   height: 85px;
+}
+
+#followUs .fb_iframe_widget {
+  display: block;
+  max-width: 297px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+/* centered columns styles */
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: left;
+  /* inline-block space fix */
+  margin-right: -4px;
+}
+
+.special img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+}
+
+#ourWork .carousel-inner {
+  height: auto;
+  margin-top: 40px;
+}
+
+#ourWork .ceramic {
+  background-image: url(./images/ceramic-tinted.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+#ourWork .carousel-control {
+  bottom: 38px;
+  left: 60%;
+}
+
+#ourWork .att-nav ul li {
+  text-align: center;
+}
+
+#ourWork .att-nav ul li a {
+  color: #f48321;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+#ourWork .att-nav ul li a:hover {
+  background-color: transparent;
+  background: linear-gradient(transparent, transparent);
+  color: #fff;
 }
 
 /*================Footer =============*/
@@ -1119,6 +1186,19 @@ footer {
     width: 35%;
     float: left;
   }
+  #follow .fb_iframe_widget {
+    float: right;
+  }
+  #ourWork .carousel-control {
+    left: 70%;
+  }
+  #ourWork .att-nav ul li {
+    width: 140px;
+    margin-bottom: 6.5px;
+  }
+  #ourWork .carousel-inner {
+    margin-top: 43px;
+  }
   .footerInfo a {
     font-size: 17px;
   }
@@ -1186,6 +1266,9 @@ footer {
   .page-id-17 #heroSection h1 {
     font-size: 60px;
   }
+  .contactInfo ul li a {
+    font-size: 15px;
+  }
   #contact-2 {
     padding-bottom: 40px;
   }
@@ -1194,6 +1277,15 @@ footer {
   }
   #followUs h2 {
     font-size: 48px;
+  }
+  #ourWork .att-nav {
+    margin-top: 10px;
+  }
+  #ourWork .att-nav ul li {
+    width: 180px;
+  }
+  #ourWork .att-nav ul li a {
+    padding: 12.2px 0;
   }
 }
 
@@ -1224,6 +1316,23 @@ footer {
   }
   #brands h2 {
     font-size: 32px;
+  }
+  .contactInfo ul li a {
+    font-size: 18px;
+  }
+  #ourWork .nav {
+    padding-left: 0;
+  }
+  #ourWork .att-nav ul li {
+    width: 220px;
+    margin-bottom: 8px;
+  }
+  #ourWork .att-nav ul li a {
+    font-size: 22px;
+    padding: 16.6px 0;
+  }
+  #ourWork .carousel-control {
+    left: 82%;
   }
 }
 

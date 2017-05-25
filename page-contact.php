@@ -48,11 +48,16 @@
             <div class="facebook"></div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6">
-          <div class="fb-page" data-href="https://www.facebook.com/JJ-Tile-Marble-Inc-182672908463241/" data-tabs="timeline" data-width="242" data-height="220" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/JJ-Tile-Marble-Inc-182672908463241/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JJ-Tile-Marble-Inc-182672908463241/">J&amp;J Tile &amp; Marble Inc</a></blockquote></div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-        </div>
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 fbTwitterContainer">
+          <div class="col-xs-12 col-sm-5">
+            <div class="fb-page" data-href="https://www.facebook.com/JJ-Tile-Marble-Inc-182672908463241/" data-tabs="timeline" data-width="297" data-height="240" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/JJ-Tile-Marble-Inc-182672908463241/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JJ-Tile-Marble-Inc-182672908463241/">J&amp;J Tile &amp; Marble Inc</a></blockquote></div>
+          </div>
+          <div class="col-xs-12 col-sm-7">
+            <div class="twitterPage">
+              <a class="twitter-timeline" data-width="540" data-height="240" href="https://twitter.com/JJTileandMarble">Tweets by JJTileandMarble</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div><!-- fbTwitterContainer -->
       </div><!-- row -->
     </div><!-- container -->
   </section><!-- followUs -->

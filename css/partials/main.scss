@@ -406,6 +406,8 @@
   }
 }
 #followUs{
+  background-color: $light-tan;
+  padding-bottom: 60px;
   h2{
     text-align: center;
     font-weight: 900;
@@ -469,5 +471,71 @@
     width: 230px;
     margin: 0 auto;
     height: 85px;
+  }
+  .fb_iframe_widget{
+    display: block;
+    max-width:297px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.special{
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+  }
+}
+#ourWork{
+  .carousel-inner{
+    height:auto;
+    margin-top:40px;
+  }
+  .ceramic{
+    background-image: url(./images/ceramic-tinted.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+  }
+  .carousel-control{
+    bottom: 38px;
+    left:60%
+  }
+
+  .att-nav{
+    ul{
+      li{
+        text-align: center;
+
+        a{
+          color: $orange;
+          font-weight: 700;
+          font-size: 20px;
+          padding: 5px 0;
+          background:linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+          );
+          &:hover{
+            background-color: transparent;
+            background: linear-gradient(rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.0) );
+            color:#fff;
+          }
+        }
+      }
+    }
   }
 }
