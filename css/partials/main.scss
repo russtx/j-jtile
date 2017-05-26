@@ -539,3 +539,84 @@
     }
   }
 }
+#groutContentArea{
+  background-color: $light-tan;
+  margin-top:-50px;
+  padding-top:50px;
+  .groutLeft{
+    a.btn-main{
+    @extend .button-grout;
+    float:right;
+    }
+  }
+  .groutRight{
+    a.btn-main{
+    @extend .button-grout;
+    float:left;
+    }
+  }
+  .stpLogo{
+    padding-bottom: 20px;
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .stpList{
+    padding: 0 5px;
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0 0 20px 0;
+      li{
+        font-size: 10px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        span{
+          display: inline;
+          font-size: 8px;
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+#groutColors{
+  padding: 20px;
+  h3{
+    color: $orange;
+    font-size: 18px;
+  }
+  ul{
+    list-style: none;
+    padding: 10px;
+    li{
+      float:left;
+      padding: 5px;
+      height:85px;
+
+      img{
+        //transition: all 0.85s ease-in-out;
+        &:hover{
+        width:100px;
+        position: absolute;
+        padding: 5px;
+        }
+      }
+      p{
+        //float: left;
+      }
+    }
+  }
+}
+#video-2{
+  background-color: $dark-brown;
+  padding: 40px 0 ;
+}
+#tileContentArea{
+  .tileContent{
+    padding: 20px;
+  }
+}

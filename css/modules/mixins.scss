@@ -35,6 +35,23 @@
   font-size: 12px;
   font-weight: 600;
 }
+.button-grout{
+  display: block;
+  position: relative;
+  border: solid 1px $dark-brown;
+  color: $dark-brown;
+  padding: 5px ;
+  width: 130px;
+  text-align: center;
+  margin:0 auto 30px auto;
+  font-size: 10px;
+  text-decoration: none;
+  &:hover{
+    border: solid 1px #fff;
+    color: #fff;
+    background-color: $dark-brown;
+  }
+}
 .sprite{
   display: inline-block;
   width: 143px;

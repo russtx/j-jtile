@@ -36,40 +36,23 @@
           <!-- Controls -->
 
         <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-
           <span class="sr-only">Previous</span>
-
         </a>
-
         <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-
           <span class="sr-only">Next</span>
-
         </a>
     </section><!-- carousel -->
-
   </div><!-- tabpanel -->
-
               <?php $c++; ?>
-
             <?php endwhile; endif; ?>
-
-
-
           </div><!-- tab-content -->
-
         </div><!-- att-disp -->
         </div><!-- col-xs-12 col-sm-9 -->
       </div><!-- row -->
     </div><!-- container -->
   </section><!-- ourwork -->
-
-
-
 
   <section id="contact">
     <div class="container">
@@ -94,7 +77,7 @@
         </div>
       </div><!-- row -->
     </div><!-- container -->
-  </section>
+  </section><!-- contact -->
 
 
 

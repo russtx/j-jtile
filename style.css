@@ -62,6 +62,25 @@ import bootstrap
   font-weight: 600;
 }
 
+.button-grout, #groutContentArea .groutLeft a.btn-main, #groutContentArea .groutRight a.btn-main {
+  display: block;
+  position: relative;
+  border: solid 1px #211d1e;
+  color: #211d1e;
+  padding: 5px;
+  width: 130px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.button-grout:hover, #groutContentArea .groutLeft a.btn-main:hover, #groutContentArea .groutRight a.btn-main:hover {
+  border: solid 1px #fff;
+  color: #fff;
+  background-color: #211d1e;
+}
+
 .sprite, .aboutIcons .sprite-1, .aboutIcons .sprite-2, .aboutIcons .sprite-3, .aboutIcons .sprite-4, .aboutIcons .sprite-5 {
   display: inline-block;
   width: 143px;
@@ -948,6 +967,88 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #fff;
 }
 
+#groutContentArea {
+  background-color: #ededef;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+#groutContentArea .groutLeft a.btn-main {
+  float: right;
+}
+
+#groutContentArea .groutRight a.btn-main {
+  float: left;
+}
+
+#groutContentArea .stpLogo {
+  padding-bottom: 20px;
+}
+
+#groutContentArea .stpLogo img {
+  display: block;
+  margin: 0 auto;
+}
+
+#groutContentArea .stpList {
+  padding: 0 5px;
+}
+
+#groutContentArea .stpList ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+#groutContentArea .stpList ul li {
+  font-size: 10px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+#groutContentArea .stpList ul li span {
+  display: inline;
+  font-size: 8px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-weight: 700;
+}
+
+#groutColors {
+  padding: 20px;
+}
+
+#groutColors h3 {
+  color: #f48321;
+  font-size: 18px;
+}
+
+#groutColors ul {
+  list-style: none;
+  padding: 10px;
+}
+
+#groutColors ul li {
+  float: left;
+  padding: 5px;
+  height: 85px;
+}
+
+#groutColors ul li img:hover {
+  width: 100px;
+  position: absolute;
+  padding: 5px;
+}
+
+#video-2 {
+  background-color: #211d1e;
+  padding: 40px 0;
+}
+
+#tileContentArea .tileContent {
+  padding: 20px;
+}
+
 /*================Footer =============*/
 footer {
   background-color: #3e3934;
@@ -1115,6 +1216,9 @@ footer {
   #selections {
     background-position-x: 0;
   }
+  #groutContentArea .stpList ul {
+    padding: 0 0 20px 10px;
+  }
 }
 
 /* Small devices (tablets, 768px and up) ====================================================================================================*/
@@ -1199,11 +1303,28 @@ footer {
   #ourWork .carousel-inner {
     margin-top: 43px;
   }
+  #groutContentArea .stpList ul li {
+    font-size: 12px;
+  }
+  #groutContentArea .stpList ul li span {
+    font-size: 10px;
+  }
+  #groutColors {
+    padding: 20px 20px 70px 20px;
+  }
+  #groutColors .centered {
+    display: block;
+    width: 415px;
+    margin: 0 auto;
+  }
   .footerInfo a {
     font-size: 17px;
   }
   .footerSocials {
     margin-bottom: 10px;
+  }
+  #tileContentArea .tileContent {
+    padding: 40px;
   }
 }
 

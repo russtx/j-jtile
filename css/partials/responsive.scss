@@ -11,7 +11,13 @@ $screen-xs-min: 424px;
   #selections{
     background-position-x: 0;
   }
-
+  #groutContentArea{
+    .stpList{
+      ul{
+        padding: 0 0 20px 10px;
+      }
+    }
+  }
 
 }
 /* Small devices (tablets, 768px and up) ====================================================================================================*/
@@ -122,6 +128,26 @@ $screen-xs-min: 424px;
     }
 
   }
+  #groutContentArea{
+    .stpList{
+      ul{
+        li{
+          font-size: 12px;
+          span{
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  #groutColors{
+    padding: 20px 20px 70px 20px;
+    .centered{
+      display: block;
+      width: 415px;
+      margin:0 auto;
+    }
+  }
   .footerInfo{
     a{
       font-size: 17px;
@@ -129,6 +155,11 @@ $screen-xs-min: 424px;
   }
   .footerSocials{
     margin-bottom: 10px;
+  }
+  #tileContentArea{
+    .tileContent{
+      padding: 40px;
+    }
   }
 }
 /* Medium devices (desktops, 992px and up) ==================================================================================================*/
