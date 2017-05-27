@@ -54,6 +54,8 @@
   .icons{
     display: block;
     min-height: 200px;
+    position: relative;
+    left: -20px;
   }
   .spriteBox{
     display: block;
@@ -97,7 +99,7 @@
 
   }
   .sprite-3{
-    background: url(./images/grout-sprite.png);
+    background: url(./images/grout-sprite-1.png);
     background-position-y: -130.5px;
     background-repeat: no-repeat;
     &:hover{
@@ -108,7 +110,7 @@
   }
 
 .sprite-4{
-  background: url(./images/ruler-sprite.png);
+  background: url(./images/ruler-sprite-1.png);
   background-position-y: -130.5px;
   background-repeat: no-repeat;
   &:hover{
@@ -175,6 +177,8 @@
     display: block;
     margin: 10px auto;
     width: 180px;
+    position: relative;
+    left:-20px;
     &:hover{
       width:200px;
     }

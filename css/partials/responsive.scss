@@ -68,6 +68,7 @@ $screen-xs-min: 424px;
     }
   }
   .carousel-inner{
+    top:-27px;
     height: 92vh;
   }
   .sliderButtons{
@@ -75,6 +76,11 @@ $screen-xs-min: 424px;
     a.btn-main{
       width:180px;
       font-size: 15px;
+    }
+  }
+  .grid-item{
+    img{
+      left:0;
     }
   }
   #finance{
@@ -154,7 +160,7 @@ $screen-xs-min: 424px;
     }
   }
   .footerSocials{
-    margin-bottom: 10px;
+
   }
   #tileContentArea{
     .tileContent{
@@ -281,6 +287,27 @@ $screen-xs-min: 424px;
             padding:12.2px 0;
           }
         }
+      }
+    }
+  }
+  .footerSocials{
+    margin-bottom: 10px;
+    clear: none;
+    padding-top: 0px;
+    left: 32px;
+    width: 272px;
+    margin-left: -32px;
+  }
+  .footerInfo{
+    h3{
+      font-size: 18px;
+      margin:4px 0 1px 0;
+    }
+  }
+  #darkBar{
+    .navbar-brand{
+      img{
+        margin: 16px auto 0 auto;
       }
     }
   }

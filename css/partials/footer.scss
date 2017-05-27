@@ -8,15 +8,24 @@ footer{
   padding: 0;
   background-color: $dark-brown;
   .navbar-brand{
+    float:none;
     padding: 18px 0;
     img{
-      height:50px;
+      height:auto;
+      display: block;
+      margin: 0 auto;
+      width: 150px;
     }
   }
 }
 .footerSocials{
   position: relative;
-  left: 20px;
+    clear: both;
+    padding-bottom: 10px;
+    left: 20px;
+    height: 60px;
+    width: 242px;
+    margin: 0 auto;
   .twitter{
     display: block;
     float: left;
@@ -69,7 +78,7 @@ footer{
 .footerInfo{
   color:#fff;
   h3{
-    font-size: 20px;
+    font-size: 13px;
     padding:0px 0 0 0;
     margin:1px 0 1px 0;
   }
@@ -79,7 +88,7 @@ footer{
   }
   a{
     color: #fff;
-    font-size: 30px;
+    font-size: 18px;
     margin-top:5px;
     text-decoration: none;
     &:hover{

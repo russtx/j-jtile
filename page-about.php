@@ -65,7 +65,7 @@
 
                 <div class="col-xs-6 col-sm-3 icons">
                   <div class="spriteBox">
-                    <a href="<?php echo home_url(); ?>"
+                    <a href="<?php echo home_url(); ?>/tiles/"
                       <span class="sprite-2"></span>
                       <span class="spriteText">TILES</span>
                     </a>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-3 icons">
                   <div class="spriteBox">
-                    <a href="<?php echo home_url(); ?>"
+                    <a href="<?php echo home_url(); ?>/groutcaulk/"
                       <span class="sprite-3"></span>
                       <span class="spriteText">GROUT</span>
                     </a>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-3 icons">
                   <div class="spriteBox">
-                    <a href="<?php echo home_url(); ?>"
+                    <a href="<?php echo home_url(); ?>/our-work/"
                       <span class="sprite-4"></span>
                       <span class="spriteText">OUR WORK</span>
                     </a>

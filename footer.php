@@ -2,16 +2,19 @@
   <div id="darkBar">
     <div class="container">
       <div class="row">
-        <div class="col-cs-12 col-sm-3">
-          <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt=" Logo" class="logo-img"></a>
+        <div class="col-cs-12 col-md-3">
+          <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-new.png" alt=" Logo" class="logo-img"></a>
         </div>
-        <div class="col-cs-12 col-sm-3 footerSocials">
-          <div class="twitter"></div>
-          <div class="instagram"></div>
-          <div class="linkedIn"></div>
-          <div class="facebook"></div>
+
+        <div class="col-cs-12 col-md-3 ">
+          <div class="footerSocials">
+            <a href="<?php the_field('twitter_link', 'option'); ?>" target="_blank"><div class="twitter"></div></a>
+            <a href="<?php the_field('instagram_link', 'option'); ?>" target="_blank"><div class="instagram"></div></a>
+            <a href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank"><div class="linkedIn"></div></a>
+            <a href="<?php the_field('facebook_link', 'option'); ?>" target="_blank"><div class="facebook"></div></a>
+          </div>
         </div>
-        <div class="col-cs-12 col-sm-5 col-sm-offset-1 footerInfo">
+        <div class="col-cs-12 col-md-5 col-md-offset-1 footerInfo">
           <div class="col-xs-6">
             <h4>FREDERICKSBURG LOCATION</h4>
             <a href="tel:54071003003">540-710-0303</a>

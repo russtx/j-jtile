@@ -32,7 +32,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="col-sm-2 navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt=" Logo" class="logo-img"></a>
+            <a class="col-sm-2 navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-new.png" alt=" Logo" class="logo-img"></a>
               <div class="col-sm-5 flex">
                 <div class="phone">
                   <p>FREDERICKSBURG LOCATION</p>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="col-xs-6">
                   <div class="right">
-                    <a href="<?php echo home_url(); ?>/virtual-designer" class="btn-main">VIRTUAL DESIGNER</a>
+                    <a href="<?php echo home_url(); ?>/virtual-designer/" class="btn-main">VIRTUAL DESIGNER</a>
                   </div>
                 </div>
               </div><!-- sliderButtons -->

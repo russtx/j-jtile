@@ -258,8 +258,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .carousel-inner {
-  height: 80.1vh;
-  top: -28px;
+  height: 80vh;
+  top: -27px;
   z-index: 99;
 }
 
@@ -451,6 +451,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .aboutIcons .icons {
   display: block;
   min-height: 200px;
+  position: relative;
+  left: -20px;
 }
 
 .aboutIcons .spriteBox {
@@ -497,7 +499,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .aboutIcons .sprite-3 {
-  background: url(./images/grout-sprite.png);
+  background: url(./images/grout-sprite-1.png);
   background-position-y: -130.5px;
   background-repeat: no-repeat;
 }
@@ -507,7 +509,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .aboutIcons .sprite-4 {
-  background: url(./images/ruler-sprite.png);
+  background: url(./images/ruler-sprite-1.png);
   background-position-y: -130.5px;
   background-repeat: no-repeat;
 }
@@ -582,6 +584,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   display: block;
   margin: 10px auto;
   width: 180px;
+  position: relative;
+  left: -20px;
 }
 
 .grid-item img:hover {
@@ -1062,16 +1066,25 @@ footer {
 }
 
 #darkBar .navbar-brand {
+  float: none;
   padding: 18px 0;
 }
 
 #darkBar .navbar-brand img {
-  height: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
 }
 
 .footerSocials {
   position: relative;
+  clear: both;
+  padding-bottom: 10px;
   left: 20px;
+  height: 60px;
+  width: 242px;
+  margin: 0 auto;
 }
 
 .footerSocials .twitter {
@@ -1135,7 +1148,7 @@ footer {
 }
 
 .footerInfo h3 {
-  font-size: 20px;
+  font-size: 13px;
   padding: 0px 0 0 0;
   margin: 1px 0 1px 0;
 }
@@ -1147,7 +1160,7 @@ footer {
 
 .footerInfo a {
   color: #fff;
-  font-size: 30px;
+  font-size: 18px;
   margin-top: 5px;
   text-decoration: none;
 }
@@ -1261,6 +1274,7 @@ footer {
     top: 0;
   }
   .carousel-inner {
+    top: -27px;
     height: 92vh;
   }
   .sliderButtons {
@@ -1269,6 +1283,9 @@ footer {
   .sliderButtons a.btn-main {
     width: 180px;
     font-size: 15px;
+  }
+  .grid-item img {
+    left: 0;
   }
   #finance .leftFinance h2 {
     font-size: 70px;
@@ -1319,9 +1336,6 @@ footer {
   }
   .footerInfo a {
     font-size: 17px;
-  }
-  .footerSocials {
-    margin-bottom: 10px;
   }
   #tileContentArea .tileContent {
     padding: 40px;
@@ -1407,6 +1421,21 @@ footer {
   }
   #ourWork .att-nav ul li a {
     padding: 12.2px 0;
+  }
+  .footerSocials {
+    margin-bottom: 10px;
+    clear: none;
+    padding-top: 0px;
+    left: 32px;
+    width: 272px;
+    margin-left: -32px;
+  }
+  .footerInfo h3 {
+    font-size: 18px;
+    margin: 4px 0 1px 0;
+  }
+  #darkBar .navbar-brand img {
+    margin: 16px auto 0 auto;
   }
 }
 
