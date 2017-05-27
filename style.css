@@ -317,6 +317,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-align: center;
 }
 
+a.btn-main {
+  text-decoration: none;
+}
+
+a.btn-main:hover {
+  border: 1px solid #e1caa2;
+  color: #e1caa2;
+}
+
 .carousel-control {
   top: initial;
   left: auto;
@@ -586,10 +595,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   width: 180px;
   position: relative;
   left: -20px;
+  transition: all .2s ease-in-out;
 }
 
 .grid-item img:hover {
-  width: 200px;
+  transform: scale(1.1);
 }
 
 .reviewHeader h2 {
@@ -1038,10 +1048,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   height: 85px;
 }
 
+#groutColors ul li img {
+  transition: all .5s ease-in-out;
+}
+
 #groutColors ul li img:hover {
   width: 100px;
   position: absolute;
   padding: 5px;
+  transform: scale(1.5);
 }
 
 #video-2 {
@@ -1369,6 +1384,9 @@ footer {
     font-size: 18px;
     font-weight: 600;
     border: 2px solid #fff;
+  }
+  .sliderButtons a.btn-main:hover {
+    border: solid 2px #e1caa2;
   }
   #finance .leftFinance h2 {
     font-size: 130px;

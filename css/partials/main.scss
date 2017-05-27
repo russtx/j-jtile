@@ -179,8 +179,9 @@
     width: 180px;
     position: relative;
     left:-20px;
+    transition: all .2s ease-in-out;
     &:hover{
-      width:200px;
+      transform: scale(1.1);
     }
   }
 }
@@ -602,11 +603,12 @@
       height:85px;
 
       img{
-        //transition: all 0.85s ease-in-out;
+        transition: all .5s ease-in-out;
         &:hover{
         width:100px;
         position: absolute;
         padding: 5px;
+        transform: scale(1.5);
         }
       }
       p{

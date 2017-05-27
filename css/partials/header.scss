@@ -132,7 +132,12 @@
 
 a.btn-main{
   @extend .button;
+  text-decoration: none;
+  &:hover{
+    border:1px solid $tan;
+    color: $tan;
 
+  }
 }
 .carousel-control{
   top:initial;
