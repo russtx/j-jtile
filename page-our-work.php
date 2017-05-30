@@ -9,7 +9,7 @@
               <?php $i = 1; ?>
               <?php if(have_rows('gallery')) : while(have_rows('gallery')) : the_row(); ?>
                 <li role="presentation" <?php if($i == 1){ echo 'class="active"'; } ?> style="background:  url(<?php  the_sub_field('gallery_image'); ?>);">
-                  <a href="#gallery<?php echo $i; ?>" aria-controls="gallery<?php echo $i; ?>" role="tab" data-toggle="tab"><?php the_sub_field('gallery_name'); ?> </a>
+                  <a class="hvr-bounce-to-bottom" href="#gallery<?php echo $i; ?>" aria-controls="gallery<?php echo $i; ?>" role="tab" data-toggle="tab"><?php the_sub_field('gallery_name'); ?> </a>
                 </li>
                 <?php $i++; ?>
               <?php endwhile; endif; ?>

@@ -3,12 +3,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-10 col-xs-offset-1">
-					<div class="col-xs-5 leftFinance">
-						<h2>0%</h2>
-					</div>
-					<div class="col-xs-7 rightFinance">
-						<h3>FINANCING</h3>
-						<h4>FOR QUALIFIED BUYERS</h4>
+					<div id="zoom-box">
+						<div class="col-xs-5 leftFinance">
+							<h2>0%</h2>
+						</div>
+						<div class="col-xs-7 rightFinance">
+							<h3>FINANCING</h3>
+							<h4>FOR QUALIFIED BUYERS</h4>
+						</div>
 					</div>
 				</div>
 			</div><!-- row -->
