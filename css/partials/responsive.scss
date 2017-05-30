@@ -58,6 +58,9 @@ $screen-xs-min: 424px;
     height:8vh;
 
   }
+  .in{
+    background-color: transparent;
+  }
   #mainPhoto{
     top:-195px;
   }
@@ -68,7 +71,7 @@ $screen-xs-min: 424px;
     }
   }
   .carousel-inner{
-    top:-27px;
+    top:-30px;
     height: 92vh;
   }
   .sliderButtons{
@@ -175,6 +178,13 @@ $screen-xs-min: 424px;
       height:40px;
     }
   }
+  .navbar-header{
+    position: relative;
+    top:14px;
+  }
+  .carousel-inner{
+    top:-29px;
+  }
   .phone{
     p{
       font-size: 10px;
@@ -187,7 +197,7 @@ $screen-xs-min: 424px;
     left:80px;
   }
   .nav{
-    top:5px;
+    top:20px;
     padding-left:0px;
     li{
       a{
