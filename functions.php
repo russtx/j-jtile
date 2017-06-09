@@ -183,10 +183,6 @@ endif;
 
 //new menu
 
-
-
-
-
 // START THEME OPTIONS
 // custom theme options for user in admin area - Appearance > Theme Options
 function pu_theme_menu()
