@@ -1,45 +1,26 @@
 <?php get_header(); ?>
-
-
-
-
-
+<div id="main-container" >
 	<section id="aboutContent">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
           	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
           		<!-- article -->
           		<article id="post-<?php the_ID(); ?>" <?php post_class('mainContent'); ?>>
-
           			<?php the_content(); ?>
-
           			<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
           			<br class="clear">
-
           			<?php edit_post_link(); ?>
-
           		</article>
           		<!-- /article -->
-
           	<?php endwhile; ?>
-
           	<?php else: ?>
-
           		<!-- article -->
           		<article>
-
           			<h2><?php _e( 'Sorry, nothing to display.' ); ?></h2>
-
           		</article>
           		<!-- /article -->
-
           	<?php endif; ?>
-
-
-
           </div>
       </div><!-- row -->
   </div><!-- container -->
@@ -56,13 +37,11 @@
         </div>
       </div><!-- row -->
     </div><!-- container -->
-
         <div class="clearfix"></div>
         <div class="iconBackground">
           <div class="container">
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
-
                 <div class="col-xs-6 col-sm-3 icons">
                   <div class="spriteBox">
                     <a href="<?php echo home_url(); ?>/tiles/"

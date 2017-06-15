@@ -62,40 +62,22 @@
 
 
       <div class="carousel-inner" role="listbox">
-
         <?php
-
         if( have_rows('home_slider') ):
-
            $i=1; while ( have_rows('home_slider') ) : the_row(); ?>
-
             <div class="item <?php if ($i == 1) echo 'active'; ?> ">
-
               <div id="mainPhoto" style="background-image: url(<?php  the_sub_field('slider_image'); ?>);"></div>
-
               <div class="caption-wrapper">
-
                 <div class="caption">
-
                   <h1><?php the_sub_field('slider_title'); ?></h1>
-
                   <h3><?php the_sub_field('slider_sub-title'); ?></h3>
-
                 </div><!-- caption -->
-
               </div><!-- caption-wrapper -->
-
             </div><!-- item -->
-
             <?php $i++;  endwhile;
-
             else :
-
-
           endif;
-
           ?>
-
           <div class="container">
             <div class="row">
               <div class="sliderButtons ">
@@ -116,57 +98,28 @@
             </div><!-- row -->
           </div><!-- contaner -->
       </div><!-- carousel-inner -->
-
-
           <!-- Controls -->
-
         <a class="left carousel-control" href="#hp-hero" role="button" data-slide="prev">
-
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-
           <span class="sr-only">Previous</span>
-
         </a>
-
         <a class="right carousel-control" href="#hp-hero" role="button" data-slide="next">
-
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-
           <span class="sr-only">Next</span>
-
         </a>
-
-
     </section><!-- hp-hero -->
-
-
-
         <?php else: ?>
-
         <section id="heroSection">
-
         <div id="mainPhoto" style="background-image: url(<?php the_field('hero_image'); ?>);">
-
         <?php if(get_field('hero_title')): ?>
-
           <h1><?php the_field('hero_title'); ?></h1>
-
         <?php else: ?>
-
           <h1><?php echo get_the_title(); ?></h1>
-
         <?php endif; ?>
-
         <?php if(get_field('hero_sub-title')): ?>
-
           <?php the_field('hero_sub-title'); ?>
-
         <?php else: ?>
-
           <?php echo get_the_sub-title(); ?>
-
         <?php endif; ?>
-
       <?php endif; ?>
-
       </section><!-- heroSection -->

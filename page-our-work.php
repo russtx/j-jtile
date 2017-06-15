@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div id="main-container" >
 <section id="ourWork">
   <div class="container">
     <div class="row">

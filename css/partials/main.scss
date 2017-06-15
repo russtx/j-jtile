@@ -607,6 +607,18 @@
       float:left;
       padding: 5px;
       height:85px;
+      .colorBox-2{
+       width:55px;
+       height: 55px;
+       border:solid 1px transparent;
+       transition: all .5s ease-in-out;
+            &:hover{
+            width:80px;
+            position: absolute;
+            padding: 5px;
+            transform: scale(1.2);
+          }
+       }
 
       img{
         transition: all .5s ease-in-out;
@@ -618,7 +630,7 @@
         }
       }
       p{
-        //float: left;
+        font-size: 8px;
       }
     }
   }
@@ -676,4 +688,119 @@
   transform: scaleY(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.virtualDesignerContainer{
+  margin-top:0px;
+}
+.virtualDesignerControls{
+  padding: 10px 50px ;
+  background-color: $light-tan;
+  h3{
+    color: $orange;
+  }
+  h4{
+    color: $orange;
+    font-size: 12px;
+  }
+
+  a{
+    color: #000;
+    text-decoration: none;
+    &:active{
+      font-weight: 900;
+    }
+  }
+  a#bathroom{
+    margin-left: 40px;
+  }
+
+
+  ul{
+    width:300px;
+    list-style: none;
+    padding: 0px;
+    li{
+      width:50px;
+      float:left;
+      padding-left: 0px;
+      height:60px;
+
+      img{
+        width:35px;
+        &:hover{
+        //width:100px;
+        //position: absolute;
+        //padding: 5px;
+        //transform: scale(1.5);
+        }
+      }
+      p{
+        font-size: 8px;
+      }
+    }
+  }
+}
+.kitchenBackground{
+  position: relative;
+  background-image: url(./images/virtual-designer-background-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height:242px;
+  z-index: 100;
+}
+.bathroomBackground{
+  position: relative;
+  background-image: url(./images/bathroom-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height:242px;
+  z-index: 100;
+}
+.tileBackground{
+  position: relative;
+  //background-image: url(./images/tile-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  height:242px;
+  width: 100%;
+  z-index: 99;
+}
+.colorBox{
+  width:35px;
+  height: 35px;
+  border:solid 1px transparent;
+}
+
+/*===tabs ===*/
+.virtualDesignerControls{
+  .nav-tabs{
+    border-color:transparent;
+    li{
+      width:80px;
+      a{
+        color:#000;
+      }
+    }
+    li.roomSelector{
+      position: relative;
+      height:20px;
+      top:-17px;
+    }
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    color:#000;
+  }
+  .nav>li>a:focus, .nav>li>a:hover{
+    background-color: transparent;
+    border-color: transparent;
+    //color:#000;
+    font-weight: 900;
+  }
 }

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div id="main-container" >
 	<section id="contactInfo">
     <div class="container">
       <div class="row">

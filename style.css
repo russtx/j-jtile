@@ -272,7 +272,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 #heroSection {
-  height: 150px;
+  height: 100px;
 }
 
 #heroSection h1 {
@@ -1053,6 +1053,20 @@ a.btn-main:hover {
   height: 85px;
 }
 
+#groutColors ul li .colorBox-2 {
+  width: 55px;
+  height: 55px;
+  border: solid 1px transparent;
+  transition: all .5s ease-in-out;
+}
+
+#groutColors ul li .colorBox-2:hover {
+  width: 80px;
+  position: absolute;
+  padding: 5px;
+  transform: scale(1.2);
+}
+
 #groutColors ul li img {
   transition: all .5s ease-in-out;
 }
@@ -1062,6 +1076,10 @@ a.btn-main:hover {
   position: absolute;
   padding: 5px;
   transform: scale(1.5);
+}
+
+#groutColors ul li p {
+  font-size: 8px;
 }
 
 #video-2 {
@@ -1118,6 +1136,128 @@ a.btn-main:hover {
   transform: scaleY(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.virtualDesignerContainer {
+  margin-top: 0px;
+}
+
+.virtualDesignerControls {
+  padding: 10px 50px;
+  background-color: #ededef;
+}
+
+.virtualDesignerControls h3 {
+  color: #f48321;
+}
+
+.virtualDesignerControls h4 {
+  color: #f48321;
+  font-size: 12px;
+}
+
+.virtualDesignerControls a {
+  color: #000;
+  text-decoration: none;
+}
+
+.virtualDesignerControls a:active {
+  font-weight: 900;
+}
+
+.virtualDesignerControls a#bathroom {
+  margin-left: 40px;
+}
+
+.virtualDesignerControls ul {
+  width: 300px;
+  list-style: none;
+  padding: 0px;
+}
+
+.virtualDesignerControls ul li {
+  width: 50px;
+  float: left;
+  padding-left: 0px;
+  height: 60px;
+}
+
+.virtualDesignerControls ul li img {
+  width: 35px;
+}
+
+.virtualDesignerControls ul li p {
+  font-size: 8px;
+}
+
+.kitchenBackground {
+  position: relative;
+  background-image: url(./images/virtual-designer-background-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 242px;
+  z-index: 100;
+}
+
+.bathroomBackground {
+  position: relative;
+  background-image: url(./images/bathroom-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 242px;
+  z-index: 100;
+}
+
+.tileBackground {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  height: 242px;
+  width: 100%;
+  z-index: 99;
+}
+
+.colorBox {
+  width: 35px;
+  height: 35px;
+  border: solid 1px transparent;
+}
+
+/*===tabs ===*/
+.virtualDesignerControls .nav-tabs {
+  border-color: transparent;
+}
+
+.virtualDesignerControls .nav-tabs li {
+  width: 80px;
+}
+
+.virtualDesignerControls .nav-tabs li a {
+  color: #000;
+}
+
+.virtualDesignerControls .nav-tabs li.roomSelector {
+  position: relative;
+  height: 20px;
+  top: -17px;
+}
+
+.virtualDesignerControls .nav-tabs > li.active > a, .virtualDesignerControls .nav-tabs > li.active > a:focus, .virtualDesignerControls .nav-tabs > li.active > a:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.virtualDesignerControls .nav-tabs > li.active > a, .virtualDesignerControls .nav-tabs > li.active > a:focus, .virtualDesignerControls .nav-tabs > li.active > a:hover {
+  color: #000;
+}
+
+.virtualDesignerControls .nav > li > a:focus, .virtualDesignerControls .nav > li > a:hover {
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: 900;
 }
 
 /*================Footer =============*/
@@ -1339,6 +1479,9 @@ footer {
   .in {
     background-color: transparent;
   }
+  #heroSection {
+    height: 135px;
+  }
   #mainPhoto {
     top: -195px;
   }
@@ -1391,7 +1534,7 @@ footer {
     margin-bottom: 6.5px;
   }
   #ourWork .carousel-inner {
-    margin-top: 43px;
+    margin-top: 62px;
   }
   #groutContentArea .stpList ul li {
     font-size: 12px;
@@ -1412,6 +1555,15 @@ footer {
   }
   #tileContentArea .tileContent {
     padding: 40px;
+  }
+  .tileBackground {
+    height: 400px;
+  }
+  .kitchenBackground {
+    height: 400px;
+  }
+  .bathroomBackground {
+    height: 400px;
   }
 }
 
@@ -1452,6 +1604,12 @@ footer {
   }
   .sliderButtons a.btn-main:hover {
     border: solid 2px #e1caa2;
+  }
+  #main-container {
+    margin-top: -20px;
+  }
+  #heroSection {
+    height: 155px;
   }
   #finance .leftFinance h2 {
     font-size: 130px;
@@ -1505,6 +1663,24 @@ footer {
   #ourWork .att-nav ul li a {
     padding: 12.2px 0;
   }
+  .virtualDesignerControls {
+    padding: 20px 50px;
+  }
+  .virtualDesignerControls .form-control {
+    width: 284px;
+  }
+  .designerBlock {
+    padding-left: 0;
+  }
+  .virtualDesignerBackground {
+    height: 691px;
+  }
+  .tileBackground {
+    height: 691px;
+    background-size: contain;
+    width: 980px;
+    background-position-y: 434px;
+  }
   .footerSocials {
     margin-bottom: 10px;
     clear: none;
@@ -1519,6 +1695,9 @@ footer {
   }
   #darkBar .navbar-brand img {
     margin: 16px auto 0 auto;
+  }
+  .virtualDesignerControls .nav-tabs li.roomSelector {
+    top: -46px;
   }
 }
 
@@ -1567,9 +1746,27 @@ footer {
   #ourWork .carousel-control {
     left: 82%;
   }
+  .tileBackground {
+    width: 1200px;
+    background-position-y: 371px;
+  }
 }
 
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
+@media (min-width: 1600px) {
+  .tileBackground {
+    width: 1280px;
+    height: 750px;
+    background-position-y: 381px;
+  }
+  .virtualDesignerBackground {
+    height: 750px;
+  }
+  .virtualDesignerControls {
+    padding: 50px 200px;
+  }
+}
+
 /***********
 theme styles
 here you can directley add styles or import additional sass files

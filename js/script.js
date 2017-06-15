@@ -39,10 +39,23 @@
   itemSelector: '.grid-item',
   columnWidth: 200
 });
+//next tile selector
+$('#backgrounds').on('change', function(){
+  var tile_image = $('option:selected', this).data('kitchen-tile-image');
+  $('#tileBackground').css('background-image', 'url(' + tile_image + ')');
+
+	var tile_image2 = $('option:selected', this).data('bathroom-tile-image');
+	$('#tileBackground-2').css('background-image', 'url(' + tile_image2 + ')');
+
+
+});
+$('.colorBox').on('click', function(e){
+  e.preventDefault();
+  var grout_color = $(this).data('grout-color');
+  $('.tileBackground').css('background-color', grout_color );
+});
+
 //next
-
-
-
 
 //end here
 	});

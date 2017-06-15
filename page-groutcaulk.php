@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div id="main-container" >
   <section id="groutContentArea">
     <div class="container">
       <div class="row">
@@ -18,7 +18,7 @@
             </article><!-- /article -->
             <?php endif; ?>
             <div class="col-xs-6 groutLeft">
-              <a href="#" class="btn-main">VIRTUAL DESIGNER</a>
+              <a href="<?php echo home_url(); ?>/virtual-designer/" class="btn-main">VIRTUAL DESIGNER</a>
             </div>
 
             <div class="col-xs-6 groutRight">
@@ -61,11 +61,11 @@
               TRADITIONAL &#38;<BR />
               CLASSIC COLORS
             </h3>
-            <?php if( have_rows('traditional_grout') ): ?>
+            <?php if( have_rows('traditional_grout', 'options') ): ?>
               <ul>
-              <?php while( have_rows('traditional_grout') ): the_row(); ?>
-                <li><img src="<?php the_sub_field('traditional_grout_color'); ?>" />
-              <p><?php  the_sub_field('traditional_grout_name'); ?></p></li>
+              <?php while( have_rows('traditional_grout', 'options') ): the_row(); ?>
+                <li><div class="colorBox-2" style= "background-color:<?php  the_sub_field('traditional_grout_color_#'); ?> ;"></div>
+              <p><?php the_sub_field('traditional_grout_name'); ?></p></li>
               <?php endwhile; ?>
 
             </ul>
@@ -77,10 +77,10 @@
             <h3>
               DESIGNER COLORS
             </h3>
-            <?php if( have_rows('designer_grout') ): ?>
+            <?php if( have_rows('designer_grout', 'options') ): ?>
               <ul>
-              <?php while( have_rows('designer_grout') ): the_row(); ?>
-                <li><img src="<?php the_sub_field('designer_grout_color'); ?>" />
+              <?php while( have_rows('designer_grout', 'options') ): the_row(); ?>
+                <li><div class="colorBox-2" style= "background-color:<?php  the_sub_field('designer_grout_#'); ?> ;"></div>
               <p><?php  the_sub_field('designer_grout_name'); ?></p></li>
               <?php endwhile; ?>
 

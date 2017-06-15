@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div id="main-container" >
 	<section id="tileContentArea">
     <div class="container">
       <div class="row">
